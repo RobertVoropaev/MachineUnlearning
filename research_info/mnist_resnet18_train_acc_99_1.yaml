@@ -1,0 +1,16 @@
+batch_size: 32
+best_model:
+  accuracy:
+    best_test_acc: 0.9910143769968051
+    best_train_acc: 0.9946817018554063
+    best_val_acc: 0.9913138977635783
+  best_epoch: 9
+  log_dir: ../logs/mnist/resnet18/train/20231129_022020
+  path: ../models/mnist_resnet18_train_acc_99_1.torch
+  train_time_sec: 44.72802800000027
+dataset_name: mnist
+model_name: resnet18
+process_name: train
+test_size: 10000
+train_size: 50000
+val_size: 10000

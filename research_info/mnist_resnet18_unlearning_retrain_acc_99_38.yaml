@@ -1,0 +1,25 @@
+batch_size: 32
+dataset_name: mnist
+forget_size: 10000
+model_name: resnet18
+process_name: unlearning_retrain
+retain_size: 40000
+test_size: 10000
+unlearn_model:
+  accuracy:
+    forget_acc: 0.992611821086262
+    retrain_acc: 0.997775
+    test_acc: 0.9938099041533547
+    val_acc: 0.9919129392971247
+  best_epoch: 22
+  log_dir: ../logs/mnist/resnet18/unlearning_retrain/20231129_023016
+  mia_scores:
+    forget_vs_retain_mia: 0.5064
+    forget_vs_test_mia: 0.4976
+    forget_vs_val_mia: 0.5050999999999999
+    retain_vs_test_mia: 0.5104
+    retain_vs_val_mia: 0.5122
+    val_vs_test_mia: 0.5016
+  path: ../models/mnist_resnet18_unlearning_retrain_acc_99_38.torch
+  train_time_sec: 84.82473300000059
+val_size: 10000
